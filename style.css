@@ -30,13 +30,13 @@ body {
     margin-top: 0;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    color: #ff6b6b; /* Christmas red */
+    color: #ff6b6b;
 }
 
 .voucher .timer {
     font-size: 1.4rem;
     margin: 12px 0;
-    color: #7dffa1; /* Christmas green */
+    color: #7dffa1;
     font-weight: bold;
 }
 
@@ -50,7 +50,6 @@ body {
     border-radius: 6px;
     background: rgba(255,255,255,0.12);
     color: #fff;
-    outline: none;
     box-sizing: border-box;
 }
 .voucher input[type="text"]::placeholder {
@@ -93,7 +92,7 @@ body {
     z-index: 10;
 }
 
-/* POPUP BOX */
+/* POPUP */
 .popup {
     background: linear-gradient(135deg, rgba(255, 0, 0, 0.18), rgba(0, 255, 0, 0.18));
     backdrop-filter: blur(18px);
@@ -119,23 +118,35 @@ body {
     color: #ff4b4b;
 }
 
-/* POPUP LIST FIX */
 .popup ul {
     text-align: left;
     list-style: none;
     padding-left: 0;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 20px;
 }
 .popup ul li::before {
     content: "🎄 ";
 }
 
-/* POPUP BUTTON */
+/* BUTTON INSIDE POPUP */
 .popup button {
     margin-top: 15px;
     background: #ff4b4b;
     color: #0a0a0a;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.popup button:hover {
+    background: #cc0000;
+}
 
-    background {
-        color: black;
-        
+/* IMAGE */
+.santa-img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
